@@ -1,0 +1,11 @@
+ @import "tailwindcss";
+ 
+ body{
+    @apply bg-[#090d19] p-5;
+    @apply text-[#f0f4ef];
+    @apply font-sans;
+ }
+
+ .leaflet-control-attribution{
+   display: none !important;
+ }
