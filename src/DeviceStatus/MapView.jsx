@@ -8,7 +8,7 @@ function MapView() {
      
        };
  
-    return (<div className="bg-[#111e2e] rounded-lg border-[#112e34] w-full min-w-[300px] mt-2 mb-2 p-2">
+    return (<div className="bg-[#111e2e] rounded-lg border-[#112e34] w-full min-w-[230px] mt-2 mb-2 p-2">
       <div className=" w-50 flex-1 mb-2 mr-2 ml-2 mt-2">
         <p>Map View</p>
       </div>

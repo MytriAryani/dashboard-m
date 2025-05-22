@@ -53,7 +53,7 @@ L.Icon.Default.mergeOptions({
 
       {emergencyFeed.map((emergency,idx)=>(
        
-      <div key={emergency.id} className="flex flex-row justify-between items-center p-2 border-t-1 border-[#112e34]">
+      <div key={emergency.id} className="flex flex-row justify-between items-center p-2 max-[380px]:pr-0 border-t-1 border-[#112e34]">
 
         <div className="flex flex-col pl-2">
           <p className="text-[16px]">{emergency.alertType}</p>

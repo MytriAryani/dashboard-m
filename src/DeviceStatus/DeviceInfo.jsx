@@ -15,7 +15,7 @@ function DeviceInfo() {
 
   };
   return (
-    <div className="flex flex-wrap border bg-[#111e2e] rounded-lg border-[#112e34] w-full min-w-[300px]"> 
+    <div className="flex flex-wrap border bg-[#111e2e] rounded-lg border-[#112e34] w-full min-w-[230px]"> 
     <div className=" w-50 flex-1 mb-2 mr-2">
       <div className="ml-5 border-b-1 border-[#112e34] flex flex-row justify-between items-center h-12 ">
         <p className="text-[16px] ">Device Status</p>

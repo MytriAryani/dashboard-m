@@ -10,7 +10,8 @@ function ContectedDevices() {
     status:"Normal",
     charOne:"MITR Mini",
     charTwo:"MITR4XL80X",
-    time:15
+    time:15,
+    coordinates:[40.7128, -74.0060]
   },
 {
   id:2,
@@ -19,7 +20,8 @@ function ContectedDevices() {
   status: "Normal",
   charOne: "MITR Flex",
   charTwo: "MITR9BX20L",
-  time: 5
+  time: 5,
+  coordinates:[51.5074, -0.1278]
 },
 {
   id:3,
@@ -28,7 +30,8 @@ function ContectedDevices() {
   status: "Emergency",
   charOne: "MITR Pack",
   charTwo: "MITR7YT11Z",
-  time: 2
+  time: 2,
+  coordinates:[35.6762, 139.6503]
 }]);
   
   
@@ -63,6 +66,9 @@ function ContectedDevices() {
             <div className="flex justify-between pl-1 pr-2 ">
               <p className="text-[#bebdbd] text-[14px]">{device.charTwo}</p>
               <p className="text-[#bebdbd] text-[14px]">{device.time} min ago</p>
+            </div>
+            <div className="p-0 m-0">
+              <a href={`https://www.google.com/maps?q=${device.coordinates[0]},${device.coordinates[1]}`} target="_blank" className="text-[12px] pl-1 text-[#37b2b6] hover:text-[#3df9ff]">Open in maps</a>
             </div>
           </div>
       </div>)})}

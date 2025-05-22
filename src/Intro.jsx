@@ -4,7 +4,7 @@ import Identity from "./Introo/Identity";
 
 function Intro() {
   return (
-    <div className="flex-2 min-w-[300px] basis-0 p-4">
+    <div className="flex-2 min-w-[230px] basis-0 p-4">
       <Identity />
       <ContectedDevices />
       <EmergencyFeed />
