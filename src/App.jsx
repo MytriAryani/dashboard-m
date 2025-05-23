@@ -1,7 +1,7 @@
 import "./App.css";
-import Content from "./Content";
-import NavBar from "./NavBar";
-import SideNav from "./SideNav";
+import Content from "./pages/Dashboard/Content";
+import NavBar from "./components/NavBar";
+
 
 function App() {
   return (
