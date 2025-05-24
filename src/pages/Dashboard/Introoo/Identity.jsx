@@ -1,12 +1,11 @@
-import { UserRound } from 'lucide-react';
-import {FiChevronRight} from 'react-icons/fi';
+
 
 function Identity() {
   return(
     <div className=" min-w-[90%] flex flex-col justify-center items-center bg-[#111e2e] rounded-lg h-40 border border-[#112e34] mb-2">
         <div className="w-full flex flex-row justify-between pl-5 pr-3 pb-1 items-center border-b-1 border-[#112e34]">
             <div className="flex flex-row items-center gap-3">
-              <img src="../public/profile.jpg" alt="profile" className="rounded-full w-10 h-10" />
+              <img src="profile.jpg" alt="profile" className="rounded-full w-10 h-10" />
               <div className="flex flex-col">
                 <p className='text-[16px]'>David Clark</p>
                 <p className='text-[14px] text-[#bebdbd]'>david@example.com</p>
