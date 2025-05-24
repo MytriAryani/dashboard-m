@@ -1,16 +1,23 @@
 import "./App.css";
-import NavBar from "./components/Nav/NavBar";
-import Content from "./pages/Dashboard/Content";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Login from "./pages/UserRegister/Login";
+import SignUp from "./pages/UserRegister/Signup";
+import Home from "./pages/Home/Home";
 
 
 function App() {
   return (
     <>
-    <div className="top-div rounded-lg border-1 border-[#112e34]">
-    <NavBar/>
-       
-     <Content />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
+         
+        </Routes>
+      </BrowserRouter>
       
       
     </>

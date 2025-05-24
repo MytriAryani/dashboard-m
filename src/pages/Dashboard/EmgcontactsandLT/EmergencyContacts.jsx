@@ -27,7 +27,7 @@ function EmergencyContacts() {
   
   
   return (
-    <div className="w-full rounded-lg border-1 border-[#112e34] bg-[#111e2e]">
+    <div className="flex-1 min-w-[250px] w-full rounded-lg border-1 border-[#112e34] bg-[#111e2e]">
       <div className="flex flex-row justify-between w-full p-4">
         <p>Emergency Contacts</p>
         {/* <p className="text-[#bebdbd]">{contacts.length}</p> */}

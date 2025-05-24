@@ -45,7 +45,7 @@ L.Icon.Default.mergeOptions({
   ]);
 
   return(
-    <div className="w-full rounded-lg border-1 border-[#112e34] bg-[#111e2e] mt-2 pb-2">
+    <div className="w-[60%] ml-4 mr-4 max-[750px]:w-full rounded-lg border-1 border-[#112e34] bg-[#111e2e] mt-2 pb-2">
       <div className="flex flex-row justify-between w-full p-4">
         <p className="text-[16px]">Trigger History</p>
         

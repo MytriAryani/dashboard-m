@@ -10,14 +10,14 @@ function DeviceInfo() {
     setConnectDevice((connectDevice)=>!connectDevice);
   }
   return (
-    <div className="flex flex-row flex-wrap">
-    <div className="flex flex-col flex-wrap border bg-[#111e2e] rounded-lg border-[#112e34] w-full"> 
-    <div className=" w-full flex-1 mb-2 mr-2">
+    <div className="min-w-[204px] max-[551px]:h-fit flex-1 flex flex-row flex-wrap h-full">
+    <div className="flex flex-col flex-wrap justify-around border bg-[#111e2e] rounded-lg border-[#112e34] w-full"> 
+    
       <div className="ml-5 mr-5 border-b-1 border-[#112e34] flex flex-row justify-between items-center h-12 ">
         <p className="text-[16px] ">Device Info</p>
       </div>
      
-    </div>
+    
     <div>
       <div className="ml-5 mr-5 flex flex-row flex-wrap justify-between items-center">
         <p>Device Name</p>

@@ -2,7 +2,7 @@
 
 function Identity() {
   return(
-    <div className=" min-w-[90%] flex flex-col justify-center items-center bg-[#111e2e] rounded-lg h-40 border border-[#112e34] mb-2">
+    <div className="min-w-[250px]  max-[551px]:h-fit pt-2 pb-2  flex flex-1 flex-col justify-center items-center bg-[#111e2e] rounded-lg h-full border border-[#112e34] mb-2">
         <div className="w-full flex flex-row justify-between pl-5 pr-3 pb-1 items-center border-b-1 border-[#112e34]">
             <div className="flex flex-row items-center gap-3">
               <img src="profile.jpg" alt="profile" className="rounded-full w-10 h-10" />
