@@ -1,5 +1,11 @@
- @import "tailwindcss";
- 
+@import "tailwindcss";
+
+@theme {
+
+  --font-family: "Inter", sans-serif;
+  --color-primary: oklch(0.8 0.15 240);
+}
+
  body{
     @apply bg-[#090d19] p-5;
     @apply text-[#f0f4ef];

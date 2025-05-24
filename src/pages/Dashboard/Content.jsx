@@ -11,6 +11,7 @@ function Content() {
         <Intro />
         <DeviceStatus />
         </div>
+        
       </div>
     </div>
   );

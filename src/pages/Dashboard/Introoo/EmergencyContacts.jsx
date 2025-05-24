@@ -1,7 +1,7 @@
 import { Wifi,Star,Squircle } from "lucide-react";
 import { useState } from "react";
 
-function ContectedDevices() {
+function EmergencyContacts() {
 
   const [contacts,setContacts]=useState([{
     id:1,
@@ -47,7 +47,7 @@ function ContectedDevices() {
 
             <div className="w-full flex flex-row items-center justify-between pl-1 pr-2 pt-1">
               <p className="text-[16px]">{contact.name}</p>
-              <div className={`text-center w-fit pl-2 pr-2 bg-[#192c30b2]  rounded-lg`}>
+              <div className={`text-center w-fit pl-2 pr-2 bg-[#406168b2]  rounded-lg`}>
                 <p className="text-[14px] text-[#ffffff]">{contact.relation}</p>
               </div>
             </div>
@@ -62,4 +62,4 @@ function ContectedDevices() {
   );
 }
 
-export default ContectedDevices;
+export default EmergencyContacts;

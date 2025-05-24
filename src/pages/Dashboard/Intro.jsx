@@ -1,15 +1,16 @@
-import EmergencyFeed from "./Introoo/EmergencyFeed";
+import TriggerHistory from "./Introoo/TriggerHistory";
 import Identity from "./Introoo/Identity";
-import ContectedDevices from "./DeviceStatus/ContectedDevices";
+import EmergencyContacts from "./Introoo/EmergencyContacts";
+
 
 
 
 function Intro() {
   return (
-    <div className="flex-1 min-w-[230px] basis-0 p-4">
+    <div className="flex-4 min-w-[280px] basis-0 p-4">
       <Identity/>
-      <ContectedDevices/>
-      <EmergencyFeed/>
+      <EmergencyContacts/>
+      <TriggerHistory/>
       
     </div>
   );

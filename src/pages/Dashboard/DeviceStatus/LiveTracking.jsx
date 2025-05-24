@@ -22,11 +22,15 @@ function LiveTracking() {
    
      };
       const emergencies = [
-  { id: 1, coordinates: [17.385000, 78.486700] },
-  { id: 2, coordinates: [17.385110, 78.486700] },
-  { id: 3, coordinates: [17.385360, 78.486700] },
-  { id: 4, coordinates: [17.385490, 78.486700] }
-]
+        { id: 1, coordinates: [17.385000, 78.486700] },
+        { id: 2, coordinates: [17.385110, 78.486700] },
+        { id: 3, coordinates: [17.385360, 78.486700] },
+        { id: 4, coordinates: [17.385490, 78.486700] }
+      ];
+      const center = [
+        emergencies.reduce((sum, e) => sum + e.coordinates[0], 0) / emergencies.length,
+        emergencies.reduce((sum, e) => sum + e.coordinates[1], 0) / emergencies.length
+      ];
 
 
   return <div className="bg-[#111e2e] rounded-lg border-[#112e34] w-full min-w-[20px] mt-2 mb-2 p-2">
@@ -34,8 +38,8 @@ function LiveTracking() {
     <div className=" h-80 w-full bg-[#0b111d] border-b-1 border-[#112e34]">
       <a href="/">
       <MapContainer
-          center={[22.9734, 78.6569]} // Center of India
-          zoom={4}
+          center={center} 
+          zoom={13}
           style={{ height: "100%", width: "100%" }}
           zoomControl={false}
         >
