@@ -17,9 +17,9 @@ function NavBar() {
       <div className="max-[930px]:hidden w-80">
         <ul className="flex flex-row justify-around">
           <li  className="text-[16px] text-white transition-all duration-200 ease-in-out transform hover:text-[#04969b] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-inner"><Link to="/home" >Home</Link></li>
-          <li  className="text-[16px] text-white transition-all duration-200 ease-in-out transform hover:text-[#04969b] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-inner"><Link to="/" >Dashboard</Link></li>
-          <li  className="text-[16px] text-white transition-all duration-200 ease-in-out transform hover:text-[#04969b] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-inner"><Link to="/" >Map</Link></li>
-          <li  className="text-[16px] text-white transition-all duration-200 ease-in-out transform hover:text-[#04969b] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-inner"><Link to="/" >Contact Us</Link></li>
+          <li  className="text-[16px] text-white transition-all duration-200 ease-in-out transform hover:text-[#04969b] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-inner"><Link to="/dashboard" >Dashboard</Link></li>
+          <li  className="text-[16px] text-white transition-all duration-200 ease-in-out transform hover:text-[#04969b] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-inner"><Link to="/dashboard" >Map</Link></li>
+          <li  className="text-[16px] text-white transition-all duration-200 ease-in-out transform hover:text-[#04969b] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-inner"><Link to="#" >Contact Us</Link></li>
         </ul>
       </div>
        <div className="flex flex-row items-center justify-end gap-2 w-42 max-[700px]:hidden">
