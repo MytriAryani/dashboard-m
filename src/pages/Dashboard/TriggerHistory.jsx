@@ -64,7 +64,7 @@ L.Icon.Default.mergeOptions({
         </div>
         <div >
             <div className="map w-25 h-22 bg-[#0b111d] mr-5">
-              <a href="/">
+              <a href="/dashboard">
               <MapContainer center={[emergency.coordinates[0], emergency.coordinates[1]]} zoom={2} style={{ height: "100%", width: "100%" }} zoomControl={false}>
                 <TileLayer
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
