@@ -5,7 +5,7 @@ function PrimaryButton(props){
       const navigate = useNavigate();
       const handleClick=()=>{
             if(props.text==="Login"){
-            navigate("/login");
+            navigate("/");
       }
         }
 

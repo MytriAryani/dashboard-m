@@ -8,44 +8,57 @@ function Form(props){
     const [confirmpwd,setConfirmPwd]=useState("");
     const [visible, setVisible]=useState(false);
     const [confirmVisible, setConfirmVisible]=useState(false);
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState("");
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-         
+        setError("");
+        setSuccess("");
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+            setError("Please enter a valid email address.");
+            return;
+            }
+
+        if (!email || !password || (props.confirmpwd && !confirmpwd)) {
+            setError("All fields are required.");
+            return;
+        }
+        
         if(props.confirmpwd){
         const existingUser = JSON.parse(localStorage.getItem("user"));
 
         if (existingUser && existingUser.email === email) {
-            alert("An account with this email already exists.");
-            navigate("/");
+            setError("An account with this email already exists.");
             return;
         }
         if(password !== confirmpwd){
-            alert("passwords do not match");
+            setError("passwords do not match");
             return;
         }
         localStorage.setItem("user",JSON.stringify({email,password}));
-        alert("User Signed up");
+        
        
         console.log(`User Email: ${email}, password: ${password}`);
         setEmail("");
         setPassword("");
         setConfirmPwd("");
-        navigate("/");
+        navigate("/dashboard");
     }else{
         const savedUser=JSON.parse(localStorage.getItem("user"));
         if(!savedUser){
-            alert("No user found");
-            navigate("/signup");
+            setError("No user found");
             return;
         }
         if(savedUser.email!==email || savedUser.password!==password){
-            alert("Invalid credentials");
-            navigate("/signup");
+            setError("Invalid credentials");
             return;
         }else{
-            alert("Login successful");
+            setSuccess("Login successful");
             console.log(`User Email: ${email},password: ${password}`);
+            navigate("/dashboard");
         }
     }
     };
@@ -54,12 +67,14 @@ function Form(props){
         <div className="w-75 sm:w-120 h-100 p-8 border-1 border-white rounded-xl bg-white/10 backdrop-blur-sm flex flex-col justify-center items-start space-y-3 text-white selection:bg-blue-950">
             <h2 className="text-5xl font-medium">{props.heading}</h2>
             <p className="text-xl">{props.subheading}</p>
+            {error && <p className="text-white-400 font-medium">{error}</p>}
+            {success && <p className="text-white-400 font-medium">{success}</p>}
             <form onSubmit={handleSubmit} className="flex flex-col space-y-3 ">
-                <input type="email" 
+                <input type="text" 
                 value={email}
                 onChange={(e)=>setEmail(e.target.value)}
                 placeholder="Email" 
-                required 
+                 
                 className="w-55 sm:w-100 border-b-1 h-9 outline-0 caret-blue-950"/>
                 <div className="flex flex-row w-55 sm:w-100 border-b-1">
                 <input
@@ -67,7 +82,7 @@ function Form(props){
                 onChange={(e)=>setPassword(e.target.value)}
                 type={visible? "text" : "password"} 
                 placeholder="Password" 
-                required 
+                 
                 className="w-55 sm:w-100  h-9 outline-0 caret-blue-950"/>
                 <div className="cursor-pointer"  role="button" tabIndex={0} onClick={()=>setVisible(!visible)}>
                     {visible? <EyeOutlined/> : <EyeInvisibleOutlined/>}
@@ -80,7 +95,7 @@ function Form(props){
                 onChange={(e)=>setConfirmPwd(e.target.value)}
                 type={confirmVisible? "text" : "password"}
                 placeholder="Confirm Password" 
-                required 
+                 
                 className="w-55 sm:w-100  h-9 outline-0 caret-blue-950"/>
                 <div className="cursor-pointer" role="button" tabIndex={0} onClick={()=>setConfirmVisible(!confirmVisible)}>
                     {confirmVisible? <EyeOutlined/> : <EyeInvisibleOutlined/>}
