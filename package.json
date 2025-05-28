@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
+    "@tailwindcss/forms": "^0.5.10",
     "hamburger-react": "^2.5.2",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.511.0",

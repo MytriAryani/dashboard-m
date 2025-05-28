@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @theme {
 
   --font-family: "Inter", sans-serif;
@@ -18,4 +19,18 @@
 
  .text-shadow {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.61);
+}
+/* Custom CSS for carousel transitions */
+.carousel-item {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out !important;
+  transform: translateX(100%) !important;
+  opacity: 0 !important;
+}
+.carousel-item.active {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+.carousel-item.prev {
+  transform: translateX(-100%) !important;
+  opacity: 0 !important;
 }
