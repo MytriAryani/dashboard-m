@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs";
 import Carousel from "./carousel";
 import ContactUs from "./Contact";
 import Features from "./Features";
+import Footer from "./Footer";
 import HowItWorks from "./HowItWorks";
 import RealScenerios from "./RealScenerios";
 
@@ -19,6 +20,7 @@ function Home() {
         <Features/>
         <HowItWorks/>
         <ContactUs/>
+        <Footer/>
     </div>
   );
 }
