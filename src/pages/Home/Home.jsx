@@ -1,6 +1,7 @@
 import NavBar from "../../components/Nav/NavBar";
 import AboutUs from "./AboutUs";
 import Carousel from "./carousel";
+import ContactUs from "./Contact";
 import Features from "./Features";
 import HowItWorks from "./HowItWorks";
 import RealScenerios from "./RealScenerios";
@@ -17,6 +18,7 @@ function Home() {
         <RealScenerios/>
         <Features/>
         <HowItWorks/>
+        <ContactUs/>
     </div>
   );
 }
