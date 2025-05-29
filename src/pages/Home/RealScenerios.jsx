@@ -38,12 +38,12 @@ export default function RealScenerios(){
     return(
         <div className="mt-20">
             <div className="flex flex-col justify-center items-center">
-                <p className="text-xl text-[#04969b] font-medium">REAL-LIFE SCENERIOS</p>
-                <p className="text-4xl font-semibold mt-2">Who Needs <span className="text-[#04969b]">MITR</span>?</p>
-                <p className="text-[#bebdbd] text-m mt-2">From kids to commuters, Mitr is your invisible ally in emergencies.</p>
+                <p className="text-xl text-[#04969b] font-medium text-center">REAL-LIFE SCENERIOS</p>
+                <p className="text-4xl font-semibold mt-2 text-center">Who Needs <span className="text-[#04969b]">MITR</span>?</p>
+                <p className="text-[#bebdbd] text-m mt-2 text-center">From kids to commuters, Mitr is your invisible ally in emergencies.</p>
             </div>
-            <div className="flex justify-around items-center ml-20 mr-20 ">
-                <div className="flex flex-row flex-wrap justify-around">
+            <div className="flex justify-around items-center ">
+                <div className="flex flex-row flex-wrap justify-around w-[90%]">
                     {card.map((card)=>{
                         return (
                             <div className="w-80 rounded-lg border border-[#04969b] p-4 pt-6 pb-8 flex flex-col justify-center items-center mt-10 hover:-translate-y-1 transition-all duration-200">

@@ -5,7 +5,7 @@
         const navigate = useNavigate();
         const handleClick=()=>{
                 if(props.text==="Login"){
-                navigate("/");
+                navigate("/login");
         }
             }
 

@@ -2,9 +2,9 @@ export default function ContactUs(){
     return(
         <div className="mt-15">
             <div className="flex flex-col justify-center items-center">
-                <p className="text-xl text-[#04969b] font-medium">GET IN TOUCH</p>
-                <p className="text-4xl font-semibold mt-2">Contact Us</p>
-                <p className="text-[#bebdbd] text-m mt-2">We'd love to hear from you. Whether it's support, bulk inquiries, or just feedback.</p>
+                <p className="text-xl text-[#04969b] font-medium text-center">GET IN TOUCH</p>
+                <p className="text-4xl font-semibold mt-2  text-center">Contact Us</p>
+                <p className="text-[#bebdbd] text-m mt-2  text-center">We'd love to hear from you. Whether it's support, bulk inquiries, or just feedback.</p>
             </div>
             <div className="mt-8 px-4 max-w-xl mx-auto">
         <form className="flex flex-col space-y-4">

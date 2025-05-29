@@ -36,13 +36,13 @@ export default function HowItWorks(){
     ];
 
     return(
-        <div className="mt-20">
+        <div className="mt-20 ">
             <div className="flex flex-col justify-center items-center">
-                <p className="text-xl text-[#04969b] font-medium">HOW IT WORKS</p>
-                <p className="text-4xl font-semibold mt-2">MITR SOS User Journey</p>
-                <p className="text-[#bebdbd] text-m mt-2">Understand each step from purchase to emergency usage with your MITR device.</p>
+                <p className="text-xl text-[#04969b] font-medium text-center">HOW IT WORKS</p>
+                <p className="text-4xl font-semibold mt-2 text-center">MITR SOS User Journey</p>
+                <p className="text-[#bebdbd] text-m mt-2 text-center">Understand each step from purchase to emergency usage with your MITR device.</p>
             </div>
-            <div className="flex justify-around items-center ml-20 mr-20 ">
+            <div className="flex justify-around items-center  ">
                 <div className="flex flex-col flex-wrap justify-around">
                     {section.map((section)=>{
                         return (
