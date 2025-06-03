@@ -19,7 +19,7 @@ function HamMenu(){
                     <ul>
                         <li className="pt-1 pb-1 "><Link to="/">Home</Link></li>
                         <li className="pt-1 pb-1 "><Link to="/dashboard">Dashboard</Link></li>
-                        <li className="pt-1 pb-1 "><Link to="/dashboard">Map</Link></li>
+                        <li className="pt-1 pb-1 "><Link to="/map">Map</Link></li>
                         <li className="pt-1 pb-1 "><Link to="#">Contact Us</Link></li>
                         <li className="pt-1 pb-1 min-[700px]:hidden"><Link to="/login">Login</Link></li>
                         <li className="pt-1 pb-1 min-[700px]:hidden"><Link to="/signup">Sign Up</Link></li>

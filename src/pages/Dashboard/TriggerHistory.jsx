@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { Link } from "react-router-dom";
 
 
 function TriggerHistory() {
@@ -64,7 +65,7 @@ L.Icon.Default.mergeOptions({
         </div>
         <div >
             <div className="map w-25 h-22 bg-[#0b111d] mr-5">
-              <a href="/dashboard">
+              <Link to={`/map?lat=${emergency.coordinates[0]}&lng=${emergency.coordinates[1]}`}>
               <MapContainer center={[emergency.coordinates[0], emergency.coordinates[1]]} zoom={2} style={{ height: "100%", width: "100%" }} zoomControl={false}>
                 <TileLayer
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -78,7 +79,7 @@ L.Icon.Default.mergeOptions({
                 </Marker>
 
               </MapContainer>
-              </a>
+              </Link>
             </div> 
             </div>
         </div>

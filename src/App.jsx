@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Login from "./pages/UserRegister/Login";
 import SignUp from "./pages/UserRegister/Signup";
 import Home from "./pages/Home/Home";
+import MapPage from "./pages/MapPage";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<SignUp/>}/>
+          <Route path="/map" element={<MapPage/>}/>
          
         </Routes>
       </BrowserRouter>
